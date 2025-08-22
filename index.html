@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   <body>
@@ -13,8 +14,96 @@
       <div class="absolute top-6 right-6">
         <button
           id="themeToggle"
-          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-medium shadow-sm hover:shadow-md transition"
+          class="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-medium shadow-sm hover:shadow-md transition"
         ></button>
+      </div>
+      <h1
+        class="text-3xl md:text-6xl font-bold mb-12 text-gray-900 dark:text-gray-100"
+      >
+        Welcome to Quizzy!
+      </h1>
+      <div class="flex flex-col gap-4 w-[min(90vw,320px)]">
+        <a
+          href="./pages/quiz.html"
+          class="group text-center w-full py-4 text-lg rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-semibold shadow-sm hover:shadow-md transition-colors"
+        >
+          <span class="flex items-center justify-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-play-icon lucide-circle-play"
+            >
+              <path
+                d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"
+              />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+            <span>Play</span>
+          </span>
+        </a>
+
+        <a
+          href="./pages/difficulty.html"
+          class="group w-full py-4 text-lg rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-semibold shadow-sm hover:shadow-md transition-colors"
+        >
+          <span class="flex items-center justify-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-gauge-icon lucide-gauge"
+            >
+              <path d="m12 14 4-4" />
+              <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+            </svg>
+            <span>Difficulty Level</span>
+          </span>
+        </a>
+
+        <a
+          href="./pages/scores.html"
+          class="group w-full py-4 text-lg rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-semibold shadow-sm hover:shadow-md transition-colors"
+        >
+          <span class="flex items-center justify-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-trophy-icon lucide-trophy"
+            >
+              <path
+                d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"
+              />
+              <path
+                d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"
+              />
+              <path d="M18 9h1.5a1 1 0 0 0 0-5H18" />
+              <path d="M4 22h16" />
+              <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+              <path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
+            </svg>
+            <span>High Scores</span>
+          </span>
+        </a>
       </div>
     </div>
     <script type="module" src="./src/js/localStorage.js"></script>
