@@ -7,8 +7,17 @@
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-4xl text-amber-900 font-bold text-center">
-      welcome to Quiz!
-    </h1>
+    <div
+      class="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 transition-colors"
+    >
+      <div class="absolute top-6 right-6">
+        <button
+          id="themeToggle"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-medium shadow-sm hover:shadow-md transition"
+        ></button>
+      </div>
+    </div>
+    <script type="module" src="./src/js/localStorage.js"></script>
+    <script type="module" src="./src/js/themeToggle.js"></script>
   </body>
 </html>
