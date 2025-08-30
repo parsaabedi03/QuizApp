@@ -1,4 +1,5 @@
 import updatedQuestions from "./formatQuestions.js";
+import { setLocalStorage } from "./localStorage.js";
 
 const loader = document.getElementById("loader");
 const content = document.querySelector(".content");
@@ -114,7 +115,12 @@ const nextQuestionHanddler = () => {
   nextButtonDiv.classList.remove("flex");
   questionNumber.textContent = `${questionIndex + 1}`;
 };
-const finishQuizHandler = () => (location.href = "../../pages/end.html");
+
+const finishQuizHandler = () => {
+  setLocalStorage("score", score);
+  location.href = "../../pages/end.html";
+};
+
 const reloadHandler = () => location.reload();
 
 window.addEventListener("load", () => {
