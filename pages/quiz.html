@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Questions</title>
+    <link rel="shortcut icon" href="../src/img/logo.png" type="image/x-icon" />
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
   <body>
@@ -37,6 +38,24 @@
       <div
         class="content bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 shadow-lg rounded-2xl p-6 w-full max-w-2xl hidden"
       >
+        <div class="mb-10 flex items-center justify-between">
+          <div>
+            <p>
+              <span>Question: </span>
+              <span>
+                <span id="questionNumber">1</span>
+                / 10</span
+              >
+            </p>
+          </div>
+          <div>
+            <p>
+              <span>Score: </span>
+              <span id="userScore">0</span>
+            </p>
+          </div>
+        </div>
+
         <h2
           class="question text-2xl font-bold mb-6 text-gray-900 dark:text-white"
         ></h2>
@@ -65,6 +84,14 @@
             class="border rounded-xl px-6 py-2 mt-3 transition-all duration-300 border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer"
           >
             Next Question
+          </button>
+        </div>
+        <div class="finishButtonDiv hidden justify-end">
+          <button
+            id="finishButton"
+            class="border rounded-xl px-6 py-2 mt-3 transition-all duration-300 border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer"
+          >
+            Finish
           </button>
         </div>
       </div>
